@@ -1,140 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Project</title>
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --text-color: #1f2937;
-            --bg-color: #ffffff;
-            --secondary-bg: #f3f4f6;
-        }
+<html>
+		<head>
+				<meta charset="utf-8">
+				<!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+				<!-- Replace the content tag with appropriate information -->
+				<meta name="description" content="DESCRIPTION META TAG">
+				<meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+				<meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+				<meta property="og:url" content="URL OF THE WEBSITE"/>
+				<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+				<meta property="og:image" content="static/image/your_banner_image.png" />
+				<meta property="og:image:width" content="1200"/>
+				<meta property="og:image:height" content="630"/>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
+				<meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+				<meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+				<!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+				<meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+				<meta name="twitter:card" content="summary_large_image">
+				<!-- Keywords for your paper to be indexed by-->
+				<meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
 
-        header {
-            text-align: center;
-            padding: 4rem 1rem;
-            background: var(--secondary-bg);
-            margin-bottom: 2rem;
-        }
+				<title>Academic Project Page</title>
+				<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+				<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+					  rel="stylesheet">
 
-        .title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--text-color);
-        }
+				<link rel="stylesheet" href="static/css/bulma.min.css">
+				<link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+				<link rel="stylesheet" href="static/css/bulma-slider.min.css">
+				<link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+				<link rel="stylesheet"
+					  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+				<link rel="stylesheet" href="static/css/index.css">
 
-        .subtitle {
-            font-size: 1.25rem;
-            color: #4b5563;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+				<script defer src="static/js/fontawesome.all.min.js"></script>
+				<script src="static/js/bulma-carousel.min.js"></script>
+				<script src="static/js/bulma-slider.min.js"></script>
+				<script src="static/js/index.js"></script>
+		</head>
+		<body>
 
-        .coming-soon {
-            text-align: center;
-            padding: 4rem 1rem;
-            background: var(--bg-color);
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
 
-        .announcement {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            color: var(--primary-color);
-        }
+				<section class="hero">
+						<div class="hero-body">
+								<div class="container is-max-desktop">
+										<div class="columns is-centered">
+												<div class="column has-text-centered">
+														<h1 class="title is-1 publication-title"><i>Les Dissonances</i>: Cross-Tool Harvesting and Polluting in Multi-Tool Empowered LLM Agents</h1>
+												</div>
+										</div>
+								</div>
+						</div>
+						</div>
+				</section>
 
-        .message {
-            font-size: 1.125rem;
-            color: #4b5563;
-            margin-bottom: 2rem;
-        }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #6b7280;
-            font-size: 0.875rem;
-        }
+				<section class="hero teaser">
+						<div class="container is-max-desktop">
+								<div class="hero-body">
+										<img src="static/images/XTHP.png" style="width: 95%;">
+										<h2 class="subtitle has-text-justified">
+												We present <i>XTHP</i> threat, which consists of three parts: Control flow of agent <i>(CFA)</i> hijacking, Cross-tool Data Harvesting <i>(XTH)</i> Attack and Cross-tool Polluting <i>(XTP)</i> Attack.
+										</h2>
+								</div>
+						</div>
+				</section>
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
+				<!-- Paper abstract -->
+				<section class="section hero is-light">
+						<div class="container is-max-desktop">
+								<div class="columns is-centered has-text-centered">
+										<div class="column is-four-fifths">
+												<h2 class="title is-3">Overview</h2>
+												<div class="content has-text-justified">
+														<p>
+														Large Language Model (LLM) agents are autonomous systems powered by LLMs, capable of reasoning and planning to solve problems by leveraging a set of tools. 
+														However, the integration of multi-tool capabilities in LLM agents introduces challenges in securely managing tools, ensuring their compatibility, handling dependency relationships, and protecting control flows within LLM agent workflows.
 
-        .social-links a {
-            color: #6b7280;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
+														In this paper, we present the <b>first systematic security analysis of task control flows in multi-tool-enabled LLM agents.</b>
 
-        .social-links a:hover {
-            color: var(--primary-color);
-        }
+														</p>
+														<p>
+														We identify a novel threat, <b>Cross-Tool Harvesting and Polluting (XTHP)</b>, which includes multiple attack vectors to first hijack the normal control flows of agent tasks, and then collect and pollute confidential or private information within LLM agent systems.
 
-        @media (max-width: 768px) {
-            .title {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.125rem;
-            }
-            
-            .announcement {
-                font-size: 1.25rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-				<h1 class="title"><i>Les Dissonances</i>: Cross-Tool Harvesting and Polluting in Multi-Tool Empowered LLM Agents</h1>
-        </div>
-    </header>
+														</p>
+														<p>
+														To understand the impact of this threat, we developed <i>Chord</i>, a dynamic scanning tool designed to automatically detect real-world agent tools susceptible to XTHP attacks.
 
-    <main class="container">
-        <div class="coming-soon">
-            <h2 class="announcement">Coming Soon</h2>
-            <p class="message">We will release artifacts soon. Stay tuned for our research findings and implementation details.</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">Documentation</a>
-            </div>
-        </div>
-    </main>
+														Our evaluation of <b>73 real-world tools</b> from the tool repositories of two major LLM agent development frameworks, LangChain and LlamaIndex, revealed that <b>41% are vulnerable to XTHP attacks</b>, highlighting the prevalence of this threat.
+														</p>
+												</div>
+										</div>
+								</div>
+						</div>
+				</section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 LLM Agent XTHP Attack Project. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+
+				<section class="hero teaser">
+						<div class="container is-max-desktop">
+								<div style="text-align: center">
+										<br>
+										<h2 class="title is-2">End-to-end Attack Demo</h2>
+								</div>
+
+								<div class="content has-text-justified">
+										<br>
+										<p>YoutubeSearchTool uses a "comma-separated list" as input, which makes a helper tool claiming constructing a comma-separated list can always be invoked before it. Once the malicious tool being able to hijack the control flow, it may harvest the context-related data from other tools or even pollute other tool's result.</p>
+										<p>In the demo below, the malicious tool polluted the search result and appended misinformation videos into YoutubeSearchTool's original output.</p>
+								</div>
+
+								<div class="hero-body">
+										<video poster="" id="tree" autoplay controls muted loop height="100%">
+												<source src="static/videos/youtube_polluting_attack.mp4"
+														type="video/mp4">
+										</video>
+								</div>
+						</div>
+				</section>
+
+
+				<footer class="footer">
+						<div class="container">
+								<div class="columns is-centered">
+										<div class="column is-8">
+												<div class="content">
+
+														<p>
+														This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+														You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+																Commons Attribution-ShareAlike 4.0 International License</a>.
+														</p>
+
+												</div>
+										</div>
+								</div>
+						</div>
+				</footer>
+
+		</body>
 </html>
